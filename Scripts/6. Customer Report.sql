@@ -39,7 +39,7 @@ ON c.customer_key = f.customer_key
 WHERE order_date IS NOT NULL
 )
 
-, customer_aggregation 
+, customer_aggregation AS
 (
 SELECT 
 	customer_key,
